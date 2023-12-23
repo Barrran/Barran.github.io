@@ -3,7 +3,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 /* Global Style */
 
@@ -13,22 +15,23 @@ html {
     margin: auto 10px;
     color: seashell;
     background-color: black;
-    opacity: 0.9;
 }
+
 
 /* Header Start */
 
 nav.Header {
     margin: 0px 0px;
-    box-sizing: content-box;        /* this is giving me problems, can't decide which is better here, border-box or content-box */
+    box-sizing: content-box; 
     height: 69px;
     width: 100%;
     border-bottom: 1px solid seashell;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: fixed; causing unwanted margin or positioning of the header */
-    /* z-index: 1; */
+    position: sticky;
+    z-index: 1;
+    top: 0;
     background-color: black;
 }
 
@@ -50,8 +53,6 @@ ul.Navlist {
     margin-right: 10px;
 }
 
-/* Navlist list items styling */
-
 li {
     display: inline;
 }
@@ -66,21 +67,13 @@ li {
 /* Header End */
 
 
-/* Banner */
-
-/* I stopped working on the banner section
-    to figure out why the header moves to the right
-    when set to 'position: fixed;' and does not 
-    remain centered in the web page when i view the changes */
-
+/* Banner Start*/
 
 .Banner {
-    /*  position: relative; */
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: auto;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     align-content: center;
     height: 700px;
     width: 1200px;
@@ -89,29 +82,168 @@ li {
 
 }
 
-.Banner .Mission {
+.Mission {
     box-sizing: content-box;
+    width: 1200px;
     height: 100px;
-    width: 100%;
+    margin-top: 25%;
     display: flex;
     flex-direction: column;
-    position: relative;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color: seashell;
     background-color: black;
 }
 
-.Banner .Mission h2 {
-    box-sizing: content-box;
-    justify-content: center;
-    margin-top: 0%;
-    margin-bottom: 1%;
+.Banner h2, h4 {
     opacity: 0.9;
 }
 
-.Banner .Mission h4 {
-    margin-top: 0%;
-    margin-bottom: 0%;
+/* Banner End */
+
+
+/* Tea of the Month Start*/
+
+.TeaTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    background-color: black;
+}
+
+.TeaTitle h2, h4 {
+    margin: 10px;
     opacity: 0.9;
 }
+
+section.Teas {
+    box-sizing: border-box;
+    margin: auto;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+div.Container {
+    margin-bottom: 10px;
+}
+
+div.Container1 {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+div.Container2 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+}
+
+.Container h4 {
+    text-align: center;
+    opacity: 0.9;
+}
+
+.Container2 h4 {
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* Tea of the Month End */
+
+
+/* Locations Start */
+
+section.Locations {
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background: url("img-locations-background.jpg");
+    background-size: auto auto;
+    height: 570px;
+    width: 1200px;
+}
+
+section.Locations {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div.LocationHeader {
+    margin-top: 120px;
+    opacity: 0.9;
+}
+
+div.Places {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+div.Downtown,
+div.East,
+div.Oakdale {
+    height: auto;
+    width: 300px;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div.Places h4 {
+    font-weight: 200;
+}
+
+/* Locations End */
+
+
+/* Contact Start */
+
+div.ContactBox {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: auto;
+    text-align: center;
+    line-height: 3;
+    opacity: 0.9;
+}
+
+/* Contact End */
+
+
+/* Footer Start */
+
+p {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+/* Footer End */
