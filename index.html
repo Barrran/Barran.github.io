@@ -12,14 +12,14 @@
         <nav class="Header">
             <img class="Logo" src="img-tea-cozy-logo.png" alt="logo" title="Cozy Tea Logo">
             <ul class="Navlist">
-                <li><a href="#">Mission</a></li>
-                <li><a href="#">Featured Tea</a></li>
-                <li><a href="#">Locations</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#featured">Featured Tea</a></li>
+                <li><a href="#locations">Locations</a></li>
             </ul>
         </nav>
 
         <!-- Banner -->
-        <div class="Banner">
+        <div id="mission" class="Banner">
             <section class="Mission">
               <h2>Our Mission</h2>
               <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
@@ -27,17 +27,45 @@
         </div>
 
         <!-- Tea Of The Month -->
-        <div class="MonthlyBox">
-            <section class="Tea">
+        <div id="featured" class="MonthlyBox">
+            <section class="TeaTitle">
                 <h2>Tea of the Month</h2>
                 <h4>What's Steeping at The Tea Cozy?</h4>
+            </section>
+            <section class="Teas">
+                <div class="Container">
+                   <img class="image" src="img-berryblitz.jpg"" alt="Berry" title="BerryBlitz">
+                   <h4>Fall Berry Blitz Tea</h4>
+                </div>
+                <div class="Container">
+                   <img class="image" src="img-spiced-rum.jpg" alt="Spiced" title="SpicedRum">
+                   <h4>Spiced Rum Tea</h4>
+                </div>
+                <div class="Container">
+                   <img class="image" src="img-donut.jpg" alt="Donuts" title="SeasonalDonuts">
+                   <h4>Seasonal Donuts</h4>
+                </div>
+
+                <div class="Container1">
+                    <div class="Container2">
+                        <img class="image" src="img-myrtle-ave.jpg" alt="Myrtle Ave" title="MyrtleAve">
+                        <h4>Myrtle Ave Tea</h4>
+                    </div>
+                    <div class="Container2">
+                        <img class="image" src="img-bedford-bizarre.jpg" alt="Bedford" title="BedfordBizarre">
+                         <h4>Bedford Bizarre Tea</h4>
+                    </div>
+                </div>
             </section>
         </div>
        
         <!-- Locations -->
-        <div class="LocationsBox">
+        <div id="locations" class="LocationsBox">
             <section class="Locations">
-                <h2>Locations</h2>
+                <div class="LocationHeader">
+                    <h2>Locations</h2>
+                </div>
+                <div class="Places">
                     <div class="Downtown">
                         <h3>Downtown</h3>
                         <h4>384 West 4th St</h4>
@@ -56,6 +84,7 @@
                         <h4>Second Floor</h4>
                         <h4>Portland, Maine</h4>
                     </div>
+                </div>
             </section>
         </div>
 
